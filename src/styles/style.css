@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marcellus', serif;
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #FDFFFF;
+    color: #272D2D;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-family: "Gowun Batang", serif;
+}
+
+p, a, span{
+    font-size: 0.78rem;
+}
+
+p{
+    margin-bottom: 16px;
+}
+
+span{
+    margin-top: 16px;
+}
+
+header{
+    box-shadow: 1px 1px 10px #272D2D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+#logo{
+    width: 144px;
+}
+
+#menu {
+    display: none;
+    list-style: none;
+}
+
+#menu a{
+    color: #000;
+    text-decoration: none;
+}
+
+#abrirMenuMobile, #fecharMenuMobile{
+    height: 32px;
+}
+
+#fecharMenuMobile{
+    display: none;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    padding: 0 32px;
+}
+
+main section img{
+    border-radius: 8px;
+    width: 100%;
+    margin: 32px;
+}
+
+footer{
+    height: 80px;
+    box-shadow: 1px 1px 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.icons{
+    width: 48px;
+    margin-left: 16px;
+}
+
+@media (min-width: 480px){
+    h1{
+        font-size: 2rem;
+    }
+    
+    p, a, span{
+        font-size: 1rem;
+    }
+
+    main section{
+        padding: 0 96px;
+    }
+}
+
+@media (min-width: 768px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo{
+        width: 160px;
+    }
+
+    header{
+        padding: 16px 48px;
+    }
+
+    header, footer{
+        width: 100%;
+    }
+
+    #abrirMenuMobile, #fecharMenuMobile{
+        display: none;
+    }
+
+    #menu{
+        display: flex;
+    }
+
+    #menu a{
+        margin-left: 32px;
+    }
+
+    #menu a:hover{
+        color: #A44200;
+    }
+
+    .hidden-desktop{
+        display: none;
+    }
+
+    main section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+    }
+    
+    .container{
+        display: flex;
+    }
+}
