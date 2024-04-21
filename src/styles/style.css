@@ -29,6 +29,10 @@ span{
     margin-top: 16px;
 }
 
+p:last-child{
+    margin: 48px 0 16px 0;
+}
+
 header{
     box-shadow: 1px 1px 10px #272D2D;
     display: flex;
@@ -119,6 +123,10 @@ footer{
 
     header, footer{
         width: 100%;
+    }
+
+    footer{
+        height: 120px;
     }
 
     #abrirMenuMobile, #fecharMenuMobile{
