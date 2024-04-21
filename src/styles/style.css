@@ -74,7 +74,11 @@ main section{
 main section img{
     border-radius: 8px;
     width: 100%;
-    margin: 32px;
+    margin:32px 0;
+}
+
+.hidden-mobile{
+    display: none;
 }
 
 footer{
@@ -106,11 +110,12 @@ footer{
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
     body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     #logo{
@@ -145,19 +150,32 @@ footer{
         color: #A44200;
     }
 
-    .hidden-desktop{
-        display: none;
-    }
-
     main section{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         max-width: 1200px;
+    }   
+
+    main section img{
+        width: 480px;
     }
-    
-    .container{
+
+    .hidden-mobile{
         display: flex;
+    }
+
+    .hidden-desktop{
+        display: none;
+    }
+
+    .container-content{
+        display: flex;
+        margin-top: 24px;
+    }
+
+    .text-container{
+        margin: 32px;
     }
 }
