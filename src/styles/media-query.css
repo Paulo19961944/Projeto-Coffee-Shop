@@ -1,0 +1,91 @@
+/*CELULAR*/
+@media (min-width: 480px){
+    h1{
+        font-size: 2rem;
+    }
+    
+    p, a, span{
+        font-size: 1rem;
+    }
+
+    main section{
+        padding: 0 96px;
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 1024px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo{
+        width: 160px;
+    }
+
+    header{
+        padding: 16px 48px;
+    }
+
+    header, footer{
+        width: 100%;
+    }
+
+    footer{
+        height: 120px;
+    }
+
+    #abrirMenuMobile, #fecharMenuMobile{
+        display: none;
+    }
+
+    #menu{
+        background-color: transparent;
+        position: static;
+        display: flex;
+    }
+
+    #menu a{
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        color: #272D2D;
+        margin-left: 32px;
+    }
+
+    #menu a:hover{
+        color: #A44200;
+    }
+
+    main section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+    }   
+
+    main section img{
+        width: 480px;
+    }
+
+    .hidden-mobile{
+        display: flex;
+    }
+
+    .hidden-desktop{
+        display: none;
+    }
+
+    .container-content{
+        display: flex;
+        margin-top: 24px;
+    }
+
+    .text-container{
+        margin: 32px;
+    }
+}
