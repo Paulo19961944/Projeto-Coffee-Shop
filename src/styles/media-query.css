@@ -68,7 +68,7 @@
         max-width: 1200px;
     }   
 
-    main section img{
+    main section img, iframe{
         width: 480px;
     }
 
