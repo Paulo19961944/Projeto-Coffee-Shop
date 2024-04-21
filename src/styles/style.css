@@ -86,7 +86,12 @@ main section{
 main section img{
     border-radius: 8px;
     width: 100%;
-    margin:32px 0;
+    margin: 32px 0;
+}
+
+iframe{
+    border-radius: 8px;
+    width: 100%;
 }
 
 .hidden-mobile{
