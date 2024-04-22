@@ -33,7 +33,7 @@
 
     /*CABEÇALHO*/
     header{
-        padding: 16px 48px; /*Preenchimento de 16px na Vertical e de 48 px na Horizontal*/
+        padding: 16px 10%; /*Preenchimento de 16px na Vertical e de 10% na Horizontal*/
     }
 
     /*CABEÇALHO E RODAPÉ*/
@@ -64,7 +64,7 @@
         padding: 0; /*Zera o Preenchimento*/
         background-color: transparent; /*Cor de Fundo Transparente*/
         color: #272D2D; /*Cor do Texto Cinza*/
-        margin-left: 32px; /*Margem a esquerda de 32px*/
+        margin-left: 24px; /*Margem a esquerda de 32px*/
     }
 
     /*LINKS DO MENU AO PASSAR O MOUSE*/
