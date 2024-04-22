@@ -5,7 +5,7 @@ fecharMenuMobile.addEventListener('click', fecharMenu) // Adiciona evento ao Bot
 // Função para abrir o menu
 function abrirMenu(){
     bodyElement.classList.add('body-responsive') // Trava o Body
-    menu.classList.add ('menu-responsive')
+    menu.classList.add ('menu-responsive') // Adiciona Classe ao Menu
     abrirMenuMobile.classList.add('abrir-menu-responsive') // Esconde o Botão Abrir Mobile
     fecharMenuMobile.classList.add('fechar-menu-responsive') // Aparece o Botão Fechar Mobile
 }

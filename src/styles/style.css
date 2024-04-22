@@ -109,7 +109,7 @@ header{
 
 /*ADICIONA CLASSE PARA MANIPULAÇÃO JAVASCRIPT*/
 .fechar-menu-responsive{
-    display: flex !important; /*Aparece o Elemento*/
+    display: flex !important; /*Aparece o Elemento com Especifidade Alta*/
 }
 
 /*CONTEÚDO PRINCIPAL E SEÇÕES DO CONTEÚDO PRINCIPAL*/
