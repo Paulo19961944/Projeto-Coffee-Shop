@@ -4,17 +4,16 @@ fecharMenuMobile.addEventListener('click', fecharMenu) // Adiciona evento ao Bot
 
 // Função para abrir o menu
 function abrirMenu(){
-    bodyElement.style.overflow = 'hidden' // Trava o Body
-    menu.style.display = 'flex' // Flexbox
-    menu.style.flexDirection = 'column' // Alinha em Colunas
-    menu.style.alignItems = 'center' // Alinha ao Centro no Eixo Perpendicular
-    menu.style.justifyContent = 'center' // Alinha ao Centro no Eixo Principal
-    menu.style.gap = '48px' // Espaçamento de 48px
-    abrirMenuMobile.style.display = 'none' // Esconde o Botão Abrir Mobile
-    fecharMenuMobile.style.display = 'flex' // Aparece o Botão Fechar Mobile
+    bodyElement.classList.add('body-responsive') // Trava o Body
+    menu.classList.add ('menu-responsive')
+    abrirMenuMobile.classList.add('abrir-menu-responsive') // Esconde o Botão Abrir Mobile
+    fecharMenuMobile.classList.add('fechar-menu-responsive') // Aparece o Botão Fechar Mobile
 }
 
 // Função para fechar o menu
 function fecharMenu(){
-    window.location.reload() // Recarrega a Página
+    bodyElement.classList.remove('body-responsive') 
+    menu.classList.remove ('menu-responsive')
+    abrirMenuMobile.classList.remove('abrir-menu-responsive') 
+    fecharMenuMobile.classList.remove('fechar-menu-responsive')
 }

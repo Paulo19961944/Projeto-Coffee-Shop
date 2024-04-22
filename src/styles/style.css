@@ -14,6 +14,11 @@ body{
     color: #272D2D; /*Cor de Fundo Cinza - 30%*/
 }
 
+/*ADICIONA CLASSE PARA MANIPULAÇÃO JS*/
+.body-responsive{
+    overflow: hidden;
+}
+
 /*TODO OS TÍTULOS*/
 h1{
     font-size: 1.5rem; /*Tamanho da fonte de 150%*/
@@ -54,16 +59,25 @@ header{
     width: 144px; /*Largura de 144px*/
 }
 
-/*MENU*/
-#menu {
-    z-index: 1; /*Camada 1*/
+/*ADICIONA CLASSE PARA MANIPULAÇÃO JAVASCRIPT*/
+.menu-responsive{
     background-color: #272D2Dca; /*Cor de Fundo Cinza com opacidade*/
     width: 100%; /*Largura de 100%*/
     height: 100%; /*Altura de 100%*/
     position: absolute; /*Posição Absoluta*/
     top: 0; /*Alinha no topo*/
     left: 0; /*Alinha na Esquerda*/
-    display: none; /*Oculta o Menu*/
+    display: flex !important; /*Flexbox com Maior Especifidade*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+    justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+    gap: 48px; /*Espaçamento de 48px*/
+}
+
+/*MENU*/
+#menu {
+    display: none;
+    z-index: 1; /*Camada 1*/
     list-style: none; /*Oculta as Marcações da Lista*/
 }
 
@@ -86,6 +100,16 @@ header{
 #fecharMenuMobile{
     z-index: 2; /*Camada 2*/
     display: none; /*Oculta o Botão*/
+}
+
+/*ADICIONA CLASSE PARA MANIPULAÇÃO JAVASCRIPT*/
+.abrir-menu-responsive{
+    display: none; /*Esconde o Elemento*/
+}
+
+/*ADICIONA CLASSE PARA MANIPULAÇÃO JAVASCRIPT*/
+.fechar-menu-responsive{
+    display: flex !important; /*Aparece o Elemento*/
 }
 
 /*CONTEÚDO PRINCIPAL E SEÇÕES DO CONTEÚDO PRINCIPAL*/
